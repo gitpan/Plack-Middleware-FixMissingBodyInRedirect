@@ -51,7 +51,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -63,7 +63,7 @@ version 0.01
    my $app = sub { ...  };
 
    builder {
-       enable "Plack::Middleware::FixMissingBodyInRedirect";
+       enable "FixMissingBodyInRedirect";
        $app;
    };
 
@@ -74,13 +74,6 @@ This module sets body in redirect response, if it's not already set.
 =head1 NAME
 
 Plack::Middleware::FixMissingBodyInRedirect - set body for redirect response, if it's not already set
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2014 Upasana.
-
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
