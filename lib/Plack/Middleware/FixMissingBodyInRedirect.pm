@@ -53,7 +53,7 @@ sub _is_body_set {
                 return 0;
             } else {
                 foreach my $element ( @body ) {
-                    if( $element ) {
+                    if( defined $element && $element =~ /.+/ ) {
                         # if even a single $element is set, then body is set, so return true
                         return 1;
                     }
@@ -85,7 +85,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
