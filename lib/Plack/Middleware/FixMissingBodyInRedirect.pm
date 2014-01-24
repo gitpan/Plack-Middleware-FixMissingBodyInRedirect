@@ -89,7 +89,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -113,7 +113,7 @@ This module sets body in redirect response, if it's not already set.
 
 Plack::Middleware::FixMissingBodyInRedirect - set body for redirect response, if it's not already set
 
-=Head1 CONTRIBUTORS
+=head1 CONTRIBUTORS
 
 John Napiorkowski <jjn1056@yahoo.com>
 Graham Knop <haarg@haarg.org>
