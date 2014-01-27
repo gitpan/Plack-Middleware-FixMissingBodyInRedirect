@@ -21,7 +21,7 @@ sub call {
             if (@$res == 3 && !_is_body_set($res->[2])) {
                 my $body = $self->_default_html_body($location);
                 $res->[2] = [$body];
-                my $content_length = Plack::Util::content_length($body);
+                my $content_length = Plack::Util::content_length([$body]);
                 $headers->set('Content-Length' => $content_length);
                 $headers->set('Content-Type' => 'text/html; charset=utf-8');
                 return;
@@ -89,7 +89,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -116,7 +116,10 @@ Plack::Middleware::FixMissingBodyInRedirect - set body for redirect response, if
 =head1 CONTRIBUTORS
 
 John Napiorkowski <jjn1056@yahoo.com>
+
 Graham Knop <haarg@haarg.org>
+
+n0body, Mark Ellis <m@rkellis.com>
 
 =head1 AUTHOR
 
