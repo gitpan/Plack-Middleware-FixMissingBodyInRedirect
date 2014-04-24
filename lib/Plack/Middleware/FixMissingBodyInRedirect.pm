@@ -8,7 +8,7 @@ use HTML::Entities;
 use Scalar::Util qw(blessed);
 # ABSTRACT: Plack::Middleware which sets body for redirect response, if it's not already set
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 sub call {
     my $self = shift;
@@ -91,7 +91,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -110,10 +110,6 @@ version 0.09
 =head1 DESCRIPTION
 
 This module sets body in redirect response, if it's not already set.
-
-=head1 NAME
-
-Plack::Middleware::FixMissingBodyInRedirect - set body for redirect response, if it's not already set
 
 =head1 CONTRIBUTORS
 
