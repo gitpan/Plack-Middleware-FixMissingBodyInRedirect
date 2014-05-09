@@ -91,7 +91,7 @@ Plack::Middleware::FixMissingBodyInRedirect - Plack::Middleware which sets body 
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
@@ -118,6 +118,8 @@ John Napiorkowski <jjn1056@yahoo.com>
 Graham Knop <haarg@haarg.org>
 
 n0body, Mark Ellis <m@rkellis.com>
+
+ether, Karen Etheridge <ether@cpan.org>
 
 =head1 AUTHOR
 

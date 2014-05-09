@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Plack-Middleware-FixMissingBodyInRedirect,
-version 0.10:
+version 0.11:
 
   Plack::Middleware which sets body for redirect response, if it's not already set
 
