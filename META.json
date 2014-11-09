@@ -4,7 +4,7 @@
       "Upasana <me@upasana.me>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.140640",
    "license" : [
       "perl_5"
    ],
@@ -58,6 +58,6 @@
          "web" : "https://github.com/Sweet-kid/Plack-Middleware-FixMissingBodyInRedirect"
       }
    },
-   "version" : "0.11"
+   "version" : "0.12"
 }
 
